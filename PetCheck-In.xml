@@ -1,0 +1,43 @@
+Pseudocode for the Pet Check-In Method:
+START Pet Check-In method:
+Create an array of 30 spaces to record the boarding space for dogs
+Create an array of 12 spaces to record the boarding space for cats 
+Create a variable to store cat length of stay
+Create a variable to store dog length of stay
+Prompt the user to enter ‘cat’ or ‘dog’
+IF the user input variable equals ‘cat’:
+	Check if cat boarding space array is full
+	IF cat boarding space array is not full: 
+		Prompt user to check if the pet status is ‘new’ or ‘returning’ visitor.
+			IF pet status equals ‘new’:
+				Prompt user to enter appropriate pet information.
+			ELSE IF pet status equals ‘returning’:
+				Prompt user to update pet information.
+		Prompt user input as an integer to ask for the cat length of stay
+			Assign valid user input to cat length of stay variable.  
+		Assign current cat to an open space in the boarding cat array 			
+	ELSE:
+		Print message telling the user the cat boarding space is full!	
+
+
+
+ELSE IF the user input variable equals ‘dog’
+	Check if dog boarding space array is full
+	IF dog boarding space array is not full
+		Prompt user to check if the pet status is ‘new’ or ‘returning’ visitor.
+			IF pet status equals ‘new’:
+				Prompt user to enter appropriate pet information.
+			ELSE IF pet status equals ‘returning’:
+				Prompt user to update pet information 
+		Prompt user input as an integer to ask for the dog length of stay
+			Assign valid user input to dog length of stay variable
+			IF dog length of stay variable is >= 2:
+				Prompt user for dog Grooming services.
+		Assign current dog to an open space in the boarding dog array
+	ELSE:
+		Print message telling the user the dog boarding space is full!			
+	
+ELSE 
+	Prompt the user with an error message for an invalid option of neither ‘cat’ or ‘dog’
+ 
+END Pet Check-In method.
